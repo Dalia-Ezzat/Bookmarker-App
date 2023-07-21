@@ -92,16 +92,7 @@ body {
   background-color:#BB4120;
 }
     
-#btnUpdate {
-  background-color:#c448b0;
-  color: white;
-  font-weight: 600;
-  transition: all 100ms;
 
-}   
-#btnUpdate:hover{
-  background-color:#aa3997;
-}
 
 .hstack .btn1 {
   background-color: #C282C2;
@@ -113,9 +104,7 @@ body {
   color: white;
 }
 
-#btnUpdate:focus{
-  box-shadow:none;
-  border-color: #f8f8f8;}
+
 
 
 .table {
