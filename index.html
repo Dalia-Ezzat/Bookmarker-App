@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- Ggoogle-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet" />
+     <!--& favicon -->
+     <link rel="icon" href="img/bookmark.png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <!--fontawesome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!--& main css -->
+    <link rel="stylesheet" href="css/index.css" />
+ </head>
+ 
+  <body >
+
+<!-- ============  start-bookmarker-header  ============== -->
+
+ <header class="mt-4">
+    <div class="container w-50  ">
+    <div class="row">  
+    <div class="col-12 d-flex justify-content-center align-content-center">
+    <h1 class="   mt-4 position-relative">Bookmarker</h1>
+    </div>
+    </div>  
+    </div>
+    </header>
+<!--================end-header =================-->
+
+<main class="container">
+    
+    <!-- book area  -->
+    <form class="pt-3  book-inputs  m-auto ">
+       <!-- main tittle  -->
+       <h2 class="mt-4 fw-bold fs-4 text-center"> <i class="fa-solid fa-bookmark"></i>
+        Bookmark Your Favorite Sites <i class="fa-solid fa-bookmark"></i></h2>
+       <section class="book-custom rounded-3 p-4 vstack gap-4">
+          <div>
+             <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name:</label>
+             <input type="text" class="form-control" id="siteName" placeholder="BookMark Name..." />
+             <p class="alert alert-danger d-none" id="alertName"></p>
+          </div>
+
+          <div>
+             <label for="siteUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i>Site URL:</label>
+             <input type="url" class="form-control" id="siteUrl" placeholder="Website URL..." />
+             <p class="alert alert-danger d-none" id="alertUrl"></p>
+          </div>
+       
+          <div class="button d-flex justify-content-center align-items-center">
+          <button  class="btn btn-submit  mt-3 mb-4  px-5"  id="btnAdd">Submit</button>
+          <button type="submit" class="btn btn-warning mt-4 d-none" id="btnUpdate">Update Bookmark</button>
+
+        </div> 
+        </section>
+    </form>
+
+    <!-- section data  -->
+    <section class="book-data">
+       <input type="search" class="form-control form-control w-50 mx-auto  rounded-2 p-2  " placeholder="Search..." id="searchBook" />
+
+       <div class="table-responsive book-custom py-5">
+          <table class="table table-sm mb-3 text-nowrap  text-center caption-top ">
+                 <thead>
+                <tr >
+                   <th scope="col"class="py-2" >Index</th>
+                   <th scope="col"class="py-2">Website Name</th>
+                   <th scope="col"class="py-2">Visit</th>
+                   <th scope="col"class="py-2">Update</th>
+                   <th scope="col"class="py-2">Delete</th>
+                </tr>
+             </thead>
+             <tbody id="tableBody" class="py-3  mb-5 "></tbody>
+          </table>
+       </div>
+    </section>
+ </main>
+
+
+
+
+
+
+
+
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- sweetalert.js -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- main js -->
+<script src="js/index.js"></script>
+</body>
+</html>
