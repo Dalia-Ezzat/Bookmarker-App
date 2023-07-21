@@ -61,19 +61,13 @@ function updateBook() {
          name: siteName.value,
          url: siteUrl.value,
       };
-      // booksContainer.splice(indexUpdate, 1, book);
-      // displayData();
-      // setLocal();
-      // resetForm();
-      // btnAdd.classList.remove("d-none");
-      // btnUpdate.classList.add("d-none");
-      // Swal.fire({
-      //    position: "top-end",
-      //    icon: "success",
-      //    title: "successfully Updated bookmark ",
-      //    showConfirmButton: false,
-      //    timer: 1500,
-      // });
+      booksContainer.splice(indexUpdate, 1, book);
+      displayData();
+      setLocal();
+      resetForm();
+      btnAdd.classList.remove("d-none");
+      btnUpdate.classList.add("d-none");
+    
    }
 }
 
