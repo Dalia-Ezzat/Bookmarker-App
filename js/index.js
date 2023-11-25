@@ -89,16 +89,16 @@ for (var i = 0; i < booksContainer.length; i++) {
       <td scope="row">${booksContainer[i].name.toLowerCase().replaceAll(term, `<span class="text-bg-info">${term}</span>`)}</td>
     
       <td >
-         <div class="hstack justify-content-center gap-2">
-            <a href="${booksContainer[i].url}" target="_blank" class="btn btn1">Visit <i class="fa-regular fa-eye"></i>
+         <div class="hstack justify-content-center">
+            <a href="${booksContainer[i].url}" target="_blank" class="btn btn-sm btn1">Visit <i class="fa-regular fa-eye"></i>
              </a>
             </td>
    
-               <td><button class="btn btn-warning" onclick="setUpdateInfo(${i})">
+               <td><button class="btn btn-sm btn-warning" onclick="setUpdateInfo(${i})">
                 Update <i class="fa-regular fa-pen-to-square"></i>
                </button></td>
   
-               <td> <button class="btn btn-danger" onclick="deleteBookMark(${i})">
+               <td> <button class="btn btn-sm btn-danger" onclick="deleteBookMark(${i})">
                  Delete <i class="fa-solid fa-trash"></i>
                </button>
             </div>
@@ -175,7 +175,6 @@ documentHtml.forms[0].addEventListener(item, function (e) {
    validationName && validationUrl ? (validSucess = true) : (validSucess = false);
 });
 });
-
 
 
 
