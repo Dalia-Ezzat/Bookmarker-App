@@ -106,15 +106,18 @@ body {
 
 
 
-
 .table {
   --bs-table-striped-bg:#f7ecde9a !important;
 }
   
- .book-data .form-control{
+.book-data .form-control{
   margin-top:3.2em !important;
- } 
+} 
 
+
+.table tr {
+  font-size: 14px;
+}
 
 
 
